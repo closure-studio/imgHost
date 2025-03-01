@@ -27,3 +27,7 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/imghost:latest
+          platforms: linux/amd64,linux/arm64
+
+      - name: Image Digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
