@@ -9,8 +9,6 @@ import (
 
 // define a struct to store the environment variables
 type Config struct {
-	// the port to listen on
-	PORT               string
 	BASE_AUTH_USER     string
 	BASE_AUTH_PASS     string
 	REDROID_CLIENT_ID  string
@@ -25,7 +23,6 @@ type Config struct {
 // an object of Environment
 
 var Instance = Config{
-	PORT:               "3000", // default port
 	BASE_AUTH_USER:     "closure",
 	BASE_AUTH_PASS:     "s0wDmTt1mcmV04skSmRcYLZEyNtZ4bFT",
 	REDROID_CLIENT_ID:  "cdcc7399-6dff-4387-839a-4dfde70b21b7",
@@ -41,9 +38,6 @@ func InstanceInit() {
 	err := godotenv.Load()
 	if err != nil {
 		log.Println("⚠️ 未找到 .env 文件，使用默认值")
-	}
-	if port := os.Getenv("PORT"); port != "" {
-		Instance.PORT = port
 	}
 	if baseAuthUser := os.Getenv("BASE_AUTH_USER"); baseAuthUser != "" {
 		Instance.BASE_AUTH_USER = baseAuthUser

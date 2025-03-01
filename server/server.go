@@ -7,7 +7,6 @@ import (
 	S3 "github.com/closure-studio/imgHost/server/controller/s3"
 	"github.com/closure-studio/imgHost/server/middleware"
 	"github.com/closure-studio/imgHost/server/utils/resp"
-	"github.com/closure-studio/imgHost/utils/env"
 	"github.com/gofiber/fiber/v3"
 )
 
@@ -34,7 +33,7 @@ func NewServer() *Server {
 }
 
 func (s *Server) Start() {
-	fmt.Println("🚀 Server running on port " + env.Instance.PORT)
+	fmt.Println("🚀 Server running on port 8080")
 
-	log.Fatal(s.App.Listen(":" + env.Instance.PORT))
+	log.Fatal(s.App.Listen(":8080"))
 }
