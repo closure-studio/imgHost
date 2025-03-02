@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	S3 "github.com/closure-studio/imgHost/server/controller/s3"
-	"github.com/closure-studio/imgHost/server/middleware"
-	"github.com/closure-studio/imgHost/server/utils/resp"
+	S3 "github.com/closure-studio/objectStorage/server/controller/s3"
+	"github.com/closure-studio/objectStorage/server/middleware"
+	"github.com/closure-studio/objectStorage/server/utils/resp"
 	"github.com/gofiber/fiber/v3"
 )
 

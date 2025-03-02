@@ -1,4 +1,4 @@
-module github.com/closure-studio/imgHost
+module github.com/closure-studio/objectStorage
 
 go 1.23.4
 

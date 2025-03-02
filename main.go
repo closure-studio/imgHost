@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/closure-studio/imgHost/server"
-	"github.com/closure-studio/imgHost/utils/env"
-	"github.com/closure-studio/imgHost/utils/storage"
+	"github.com/closure-studio/objectStorage/server"
+	"github.com/closure-studio/objectStorage/utils/env"
+	"github.com/closure-studio/objectStorage/utils/storage"
 )
 
 func main() {

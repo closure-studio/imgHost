@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/closure-studio/imgHost/server/utils/resp"
+	"github.com/closure-studio/objectStorage/server/utils/resp"
 	"github.com/gofiber/fiber/v3"
 )
 

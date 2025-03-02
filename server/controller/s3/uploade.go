@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
-	"github.com/closure-studio/imgHost/server/utils/consts"
-	"github.com/closure-studio/imgHost/server/utils/resp"
-	"github.com/closure-studio/imgHost/utils/storage"
+	"github.com/closure-studio/objectStorage/server/utils/consts"
+	"github.com/closure-studio/objectStorage/server/utils/resp"
+	"github.com/closure-studio/objectStorage/utils/storage"
 	"github.com/gofiber/fiber/v3"
 	"github.com/google/uuid"
 )

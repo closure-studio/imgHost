@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/closure-studio/imgHost/utils/env"
+	"github.com/closure-studio/objectStorage/utils/env"
 )
 
 type S3Config struct {
