@@ -20,7 +20,7 @@ func NewServer() *Server {
 	})
 	app.Use(middleware.JSONResponseMiddleware())
 
-	api := app.Group("/api")
+	api := app.Group("/api", middleware.Auth())
 	api.Post("/upload", S3.UploadHandler())
 
 	app.Get("/", func(c fiber.Ctx) error {
